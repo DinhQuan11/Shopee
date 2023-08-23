@@ -20,6 +20,10 @@
     min-height: 26px;
 }
 
+.header__navbar-item--qr:hover .header__qr {
+    display: block;
+}
+
 .header__navbar-item,
 .header__navbar-item-link {
     display: inline-block;
@@ -72,4 +76,47 @@
 .header__navbar-title--no-cursor {
     cursor: text !important;
     color: var(--white-color) !important;
+}
+
+/* QR Code */
+.header__qr {
+    position: absolute;
+    width: 186px;
+    background-color: var(--white-color);
+    left: 0;
+    top: 118%;
+    padding: 8px;
+    animation: fadeIn ease-in 0.3s;
+    display: none;
+}
+
+.header__qr::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 16px;
+    top: -16px;
+    left: 0;
+}
+
+.header__qr-img {
+    width: 100%;
+}
+
+.header__qr-apps {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__qr-link:nth-child(1) {
+    margin-left: 11px;
+}
+
+.header__qr-link:nth-child(2) {
+    margin-right: 11px;
+}
+
+.header__qr-download-img {
+    height: 16px;
 }
