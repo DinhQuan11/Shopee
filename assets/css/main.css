@@ -254,6 +254,75 @@
     color: var(--primary-color);
 }
 
+.header__navbar-user {
+    position: relative;
+}
+
+.header__navbar-user-img {
+    width: 22px;
+}
+
+.header__navbar-user-name {
+    margin-left: 4px;
+}
+
+.header__navbar-user:hover .header__navbar-user-menu {
+    display: block;
+}
+
+.header__navbar-user-menu {
+    position: absolute;
+    z-index: 1;
+    background-color: var(--white-color);
+    width: 160px;
+    top: calc(100% + 4px);
+    right: 0;
+    padding-left: 0;
+    list-style: none;
+    border-radius: 2px;
+    border: 1px solid var(--border-color);
+    display: none;
+}
+
+.header__navbar-user-menu::before {
+    content: "";
+    position: absolute;
+    border-width: 12px 20px;
+    border-color: transparent transparent var(--white-color) transparent;
+    border-style: solid;
+    top: -24px;
+    right: 20px;
+}
+
+.header__navbar-user-menu::after {
+    content: "";
+    position: absolute;
+    width: 96px;
+    height: 12px;
+    top: -12px;
+    right: 0;
+}
+
+.header__navbar-user-item {
+    padding: 12px 0;
+}
+
+.header__navbar-user-item:hover {
+    background-color: #fafafa;
+}
+
+.header__navbar-user-item a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding-left: 16px;
+}
+
+.header__navbar-user-item:hover a {
+    color: #00bfa5;
+}
+
 /* Authentic modal */
 .auth-form {
     width: 500px;
