@@ -130,7 +130,7 @@
 /* Header notification */
 .header__notify {
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     top: 118%;
     right: 0;
     width: 404px;
@@ -505,7 +505,7 @@
 /* Search history */
 .header__search-history {
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     top: calc(100% + 2px);
     left: 0;
     width: calc(100% - 16px);
@@ -692,7 +692,7 @@
 
 .header__cart-list {
     cursor: default;
-    z-index: 1;
+    z-index: 2;
     position: absolute;
     top: calc(100% + 4px);
     right: -4px;
@@ -986,14 +986,27 @@
 }
 
 /* Product item */
-.product-item {
-    background-color: var(--white-color);
-    margin-top: 10px;
-    position: relative;
+.home-product {
+    margin-bottom: 10px;
 }
 
-.Product-item__link {
+.product-item {
+    display: block;
+    position: relative;
+    background-color: var(--white-color);
+    margin-top: 10px;
+    height: 316px;
     text-decoration: none;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    transition: transform linear 0.1s;
+    will-change: transform;
+}
+
+.product-item:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.05);
 }
 
 .product-item__img {
@@ -1054,7 +1067,7 @@
 .product-item__rating {
     color: #d5d5d5;
     font-size: 0.8rem;
-    margin-right: 4px;
+    margin-right: 6px;
 }
 
 .product-item__start--gold {
@@ -1062,7 +1075,7 @@
 }
 
 .product-item__sold {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: var(--text-color);
 }
 
@@ -1093,8 +1106,36 @@
     color: var(--white-color);
 }
 
-.product-item__sale-off {}
+.product-item__sale-off {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(254, 215, 56, 0.9);
+    width: 36px;
+    height: 34px;
+    text-align: center;
+}
 
-.product-item__sale-off-percent {}
+.product-item__sale-off::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    border-width: 0 18.2px 5px;
+    border-style: solid;
+    color: rgba(254, 215, 56, 0.9);
+    border-color: transparent currentColor transparent currentColor;
+}
 
-.product-item__sale-off-label {}
+.product-item__sale-off-percent {
+    display: block;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    margin-top: 2px;
+}
+
+.product-item__sale-off-label {
+    display: block;
+    font-size: 1.2rem;
+    color: var(--white-color);
+}
