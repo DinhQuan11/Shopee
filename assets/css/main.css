@@ -989,6 +989,11 @@
 .product-item {
     background-color: var(--white-color);
     margin-top: 10px;
+    position: relative;
+}
+
+.Product-item__link {
+    text-decoration: none;
 }
 
 .product-item__img {
@@ -1006,7 +1011,7 @@
     color: var(--text-color);
     font-size: 1.2rem;
     font-weight: 400;
-    margin: 0;
+    margin: 0 0 4px;
     line-height: 1.6rem;
     height: 3.2rem;
     overflow: hidden;
@@ -1016,23 +1021,77 @@
     -webkit-line-clamp: 2;
 }
 
-.product-item__tag {}
+.product-item__tag {
+    color: #f8ad4e;
+    font-size: 1rem;
+    border: 1px solid #f8ad4e;
+    padding: 2px 4px;
+}
 
-.product-item__price {}
+.product-item__price {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 8px 0 16px 0;
+    align-items: baseline;
+}
 
-.product-item__price-old {}
+.product-item__price-old {
+    font-size: 1.4rem;
+    color: #757575;
+    text-decoration: line-through;
+    margin-right: 8px;
+}
 
-.product-item__price-current {}
+.product-item__price-current {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+}
 
-.product-item__footer {}
+.product-item__footer {
+    display: flex;
+}
 
-.product-item__footer-rating {}
+.product-item__rating {
+    color: #d5d5d5;
+    font-size: 0.8rem;
+    margin-right: 4px;
+}
 
-.product-item__footer-rating-icon {}
+.product-item__start--gold {
+    color: var(--star-gold-color);
+}
 
-.product-item__footer-sold {}
+.product-item__sold {
+    font-size: 1.3rem;
+    color: var(--text-color);
+}
 
-.product-item__favourite {}
+.product-item__favourite {
+    position: absolute;
+    top: 12px;
+    left: -4px;
+    background-color: currentColor;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    padding: 0 4px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.product-item__favourite::before {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    border-top: 3px solid currentColor;
+    border-left: 3px solid transparent;
+    filter: brightness(60%);
+}
+
+.product-item__favourite span {
+    color: var(--white-color);
+}
 
 .product-item__sale-off {}
 
