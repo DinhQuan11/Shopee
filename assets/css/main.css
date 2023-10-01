@@ -1168,3 +1168,122 @@
 .home-product-pagination {
     margin: 48px 0 80px 0;
 }
+
+/* Footer */
+.footer {
+    background-color: #fbfbfb;
+    border-top: 4px solid var(--primary-color);
+}
+
+.footer-support {
+    padding: 48px 8px;
+}
+
+.footer-heading {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 16px 0;
+}
+
+.footer-list {
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer-link {
+    display: block;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+    margin: 10px 0;
+}
+
+.footer-link:hover {
+    color: var(--primary-color);
+}
+
+.footer-pay-img,
+.footer-ship-img {
+    margin: 4px;
+    padding: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.footer-social-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-social-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin: 12px 0;
+}
+
+.footer-social-link:hover .footer-social-name {
+    color: var(--primary-color);
+}
+
+.footer-social-icon {
+    font-size: 1.6rem;
+    color: #4a4a4a;
+    margin-right: 12px;
+}
+
+.footer-social-name {
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.footer-download {
+    display: flex;
+}
+
+.footer-qr-img {
+    width: 90px;
+    height: 90px;
+    padding: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    margin-right: 16px;
+}
+
+.footer-download-app {
+    height: 90px;
+}
+
+.footer-download-app-img {
+    width: 70px;
+    padding: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    margin: 2px;
+}
+
+/* Footer copyright */
+.footer-copyright {
+    display: flex;
+    justify-content: space-between;
+    padding: 48px 0 48px 16px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.footer-copyright__title {
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 400;
+}
+
+.footer-copyright__nation-link {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 400;
+    border-right: 1px solid var(--border-color);
+    padding: 0 6px;
+}
+
+.footer-copyright__nation-link:last-child {
+    border: none;
+}
