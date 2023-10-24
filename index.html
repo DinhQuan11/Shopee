@@ -9,8 +9,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.4.2-web/css/all.min.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,8 +23,9 @@
 <body>
     <div class="main">
         <header class="header">
-            <div class="grid">
-                <nav class="header__navbar">
+            <div class="grid wide">
+                <!-- Header navbar -->
+                <nav class="header__navbar hide-on-mobile-tablet">
                     <ul class="header__navbar-list">
                         <li class="header__navbar-item header__navbar-item--qr header__navbar-item--separate">
                             Tải ứng dụng
@@ -145,7 +148,7 @@
 
                 <!-- Header with search -->
                 <div class="header-with-search">
-                    <div class="header__logo">
+                    <div class="header__logo hide-on-mobile-tablet">
                         <a href="\" class="header__logo-link">
                             <svg class="header__logo-img" viewBox="0 0 192 65"
                                 class="shopee-svg-icon header-with-search__shopee-logo icon-shopee-logo">
@@ -374,10 +377,26 @@
                     </div>
                 </div>
             </div>
+
+            <ul class="header__sort-bar">
+                <li class="header__sort-bar-item">
+                    <a href="" class="header__sort-bar-link header__sort-bar-link--active">Liên quan</a>
+                </li>
+                <li class="header__sort-bar-item">
+                    <a href="" class="header__sort-bar-link">Mới nhất</a>
+                </li>
+                <li class="header__sort-bar-item">
+                    <a href="" class="header__sort-bar-link"> Bán chạy</a>
+                </li>
+                <li class="header__sort-bar-item">
+                    <a href="" class="header__sort-bar-link">Giá<i class="ti-angle-down"></i>
+                    </a>
+                </li>
+            </ul>
         </header>
 
         <div class="container">
-            <div class="grid">
+            <div class="grid wide">
                 <div class="grid__row app__content">
                     <div class="grid__column-2">
                         <nav class="category">
@@ -407,7 +426,7 @@
                     </div>
 
                     <div class="grid__column-10">
-                        <div class="home-filter">
+                        <div class="home-filter hide-on-mobile-tablet">
                             <span class="home-filter__title">Sắp xếp theo</span>
                             <button class="home-filter__btn btn btn--primary">Phổ biến</button>
                             <button class="home-filter__btn btn">Mới nhất</button>
@@ -468,7 +487,7 @@
                                                 </div>
                                                 <span class="product-item__sold">Đã bán 35.9k</span>
                                             </div>
-                                            <div class="product-item__favourite">
+                                            <div class="product-item__favorite">
                                                 <span>Yêu thích</span>
                                             </div>
                                             <div class="product-item__sale-off">
@@ -500,7 +519,7 @@
                                                 </div>
                                                 <span class="product-item__sold">Đã bán 778</span>
                                             </div>
-                                            <div class="product-item__favourite">
+                                            <div class="product-item__favorite">
                                                 <span>Yêu thích</span>
                                             </div>
                                             <div class="product-item__sale-off">
@@ -533,7 +552,7 @@
                                                 </div>
                                                 <span class="product-item__sold">Đã bán 35.9k</span>
                                             </div>
-                                            <div class="product-item__favourite">
+                                            <div class="product-item__favorite">
                                                 <span>Yêu thích</span>
                                             </div>
                                             <div class="product-item__sale-off">
@@ -565,7 +584,7 @@
                                                 </div>
                                                 <span class="product-item__sold">Đã bán 778</span>
                                             </div>
-                                            <div class="product-item__favourite">
+                                            <div class="product-item__favorite">
                                                 <span>Yêu thích</span>
                                             </div>
                                             <div class="product-item__sale-off">
@@ -598,7 +617,7 @@
                                                 </div>
                                                 <span class="product-item__sold">Đã bán 35.9k</span>
                                             </div>
-                                            <div class="product-item__favourite">
+                                            <div class="product-item__favorite">
                                                 <span>Yêu thích</span>
                                             </div>
                                             <div class="product-item__sale-off">
@@ -630,7 +649,7 @@
                                                 </div>
                                                 <span class="product-item__sold">Đã bán 778</span>
                                             </div>
-                                            <div class="product-item__favourite">
+                                            <div class="product-item__favorite">
                                                 <span>Yêu thích</span>
                                             </div>
                                             <div class="product-item__sale-off">
@@ -663,7 +682,7 @@
                                                 </div>
                                                 <span class="product-item__sold">Đã bán 35.9k</span>
                                             </div>
-                                            <div class="product-item__favourite">
+                                            <div class="product-item__favorite">
                                                 <span>Yêu thích</span>
                                             </div>
                                             <div class="product-item__sale-off">
@@ -695,7 +714,7 @@
                                                 </div>
                                                 <span class="product-item__sold">Đã bán 778</span>
                                             </div>
-                                            <div class="product-item__favourite">
+                                            <div class="product-item__favorite">
                                                 <span>Yêu thích</span>
                                             </div>
                                             <div class="product-item__sale-off">
@@ -728,7 +747,7 @@
                                                 </div>
                                                 <span class="product-item__sold">Đã bán 35.9k</span>
                                             </div>
-                                            <div class="product-item__favourite">
+                                            <div class="product-item__favorite">
                                                 <span>Yêu thích</span>
                                             </div>
                                             <div class="product-item__sale-off">
@@ -760,7 +779,7 @@
                                                 </div>
                                                 <span class="product-item__sold">Đã bán 778</span>
                                             </div>
-                                            <div class="product-item__favourite">
+                                            <div class="product-item__favorite">
                                                 <span>Yêu thích</span>
                                             </div>
                                             <div class="product-item__sale-off">
@@ -793,7 +812,7 @@
                                                 </div>
                                                 <span class="product-item__sold">Đã bán 35.9k</span>
                                             </div>
-                                            <div class="product-item__favourite">
+                                            <div class="product-item__favorite">
                                                 <span>Yêu thích</span>
                                             </div>
                                             <div class="product-item__sale-off">
@@ -825,7 +844,7 @@
                                                 </div>
                                                 <span class="product-item__sold">Đã bán 778</span>
                                             </div>
-                                            <div class="product-item__favourite">
+                                            <div class="product-item__favorite">
                                                 <span>Yêu thích</span>
                                             </div>
                                             <div class="product-item__sale-off">
@@ -858,7 +877,7 @@
                                                 </div>
                                                 <span class="product-item__sold">Đã bán 35.9k</span>
                                             </div>
-                                            <div class="product-item__favourite">
+                                            <div class="product-item__favorite">
                                                 <span>Yêu thích</span>
                                             </div>
                                             <div class="product-item__sale-off">
@@ -890,7 +909,7 @@
                                                 </div>
                                                 <span class="product-item__sold">Đã bán 778</span>
                                             </div>
-                                            <div class="product-item__favourite">
+                                            <div class="product-item__favorite">
                                                 <span>Yêu thích</span>
                                             </div>
                                             <div class="product-item__sale-off">
@@ -923,7 +942,7 @@
                                                 </div>
                                                 <span class="product-item__sold">Đã bán 35.9k</span>
                                             </div>
-                                            <div class="product-item__favourite">
+                                            <div class="product-item__favorite">
                                                 <span>Yêu thích</span>
                                             </div>
                                             <div class="product-item__sale-off">
@@ -955,7 +974,7 @@
                                                 </div>
                                                 <span class="product-item__sold">Đã bán 778</span>
                                             </div>
-                                            <div class="product-item__favourite">
+                                            <div class="product-item__favorite">
                                                 <span>Yêu thích</span>
                                             </div>
                                             <div class="product-item__sale-off">
@@ -988,7 +1007,7 @@
                                                 </div>
                                                 <span class="product-item__sold">Đã bán 35.9k</span>
                                             </div>
-                                            <div class="product-item__favourite">
+                                            <div class="product-item__favorite">
                                                 <span>Yêu thích</span>
                                             </div>
                                             <div class="product-item__sale-off">
@@ -1020,7 +1039,7 @@
                                                 </div>
                                                 <span class="product-item__sold">Đã bán 778</span>
                                             </div>
-                                            <div class="product-item__favourite">
+                                            <div class="product-item__favorite">
                                                 <span>Yêu thích</span>
                                             </div>
                                             <div class="product-item__sale-off">
@@ -1053,7 +1072,7 @@
                                                 </div>
                                                 <span class="product-item__sold">Đã bán 35.9k</span>
                                             </div>
-                                            <div class="product-item__favourite">
+                                            <div class="product-item__favorite">
                                                 <span>Yêu thích</span>
                                             </div>
                                             <div class="product-item__sale-off">
@@ -1085,7 +1104,7 @@
                                                 </div>
                                                 <span class="product-item__sold">Đã bán 778</span>
                                             </div>
-                                            <div class="product-item__favourite">
+                                            <div class="product-item__favorite">
                                                 <span>Yêu thích</span>
                                             </div>
                                             <div class="product-item__sale-off">
@@ -1135,7 +1154,7 @@
         </div>
 
         <footer class="footer">
-            <div class="grid">
+            <div class="grid wide">
                 <div class="footer-support grid__row">
                     <div class="grid__column-2-4">
                         <h3 class="footer-heading">CHĂM SÓC KHÁCH HÀNG</h3>
