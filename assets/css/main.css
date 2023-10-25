@@ -471,6 +471,22 @@
     width: 150px;
 }
 
+/* Header mobile menu */
+.header__mobile-menu {
+    display: none;
+}
+
+.header__mobile-menu-icon {
+    font-size: 2rem;
+    padding: 8px;
+    margin: 12px 8px 0 0;
+    color: var(--white-color);
+}
+
+.header__menu-checkbox:checked~.category {
+    display: block;
+}
+
 /* Header search */
 .header__search {
     flex: 1;
