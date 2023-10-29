@@ -160,9 +160,12 @@
                             </svg>
                         </a>
                     </div>
+
+                    <!-- List icon mobile -->
                     <label for="mobile-menu-checkbox" class="header__mobile-menu">
                         <i class="header__mobile-menu-icon fa-solid fa-bars"></i>
                     </label>
+
                     <div class="header__search">
                         <div class="header__search-input-wrap">
                             <input type="text" class="header__search-input"
@@ -223,9 +226,12 @@
                             <i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i>
                         </button>
                     </div>
+                    <input type="checkbox" hidden id="header__cart-mobile" class="header__cart-checkbox">
                     <div class="header__cart">
                         <div class="header__cart-wrap">
-                            <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
+                            <label for="header__cart-mobile" class="">
+                                <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
+                            </label>
                             <span class="header__cart-notice">3</span>
                             <!-- No cart: header__cart-list--no-cart -->
                             <div class="header__cart-list">
@@ -400,8 +406,9 @@
 
         <div class="container">
             <div class="grid wide">
-                <div class="grid__row app__content">
-                    <div class="grid__column-2">
+                <div class="row sm-gutter app__content">
+                    <div class="col l-2 m-0">
+                        <!-- Category -->
                         <input type="checkbox" hidden id="mobile-menu-checkbox" class="header__menu-checkbox">
                         <nav class="category">
                             <h3 class="category__heading">
@@ -429,7 +436,8 @@
                         </nav>
                     </div>
 
-                    <div class="grid__column-10">
+                    <div class="col l-10 m-12 c-12">
+                        <!-- Home filter -->
                         <div class="home-filter hide-on-mobile-tablet">
                             <span class="home-filter__title">Sắp xếp theo</span>
                             <button class="home-filter__btn btn btn--primary">Phổ biến</button>
@@ -465,10 +473,28 @@
                             </div>
                         </div>
 
+                        <nav class="mobile-category">
+                            <ul class="mobile-category__list">
+                                <li class="mobile-category__item">
+                                    <a class="mobile-category__link">Freeship Xtra</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a class="mobile-category__link">Shop yêu thích</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a class="mobile-category__link">Đánh giá</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a class="mobile-category__link">Theo danh mục</a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <!-- Home product -->
                         <div class="home-product">
-                            <div class="grid__row">
+                            <div class="row sm-gutter">
                                 <!-- Product item -->
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a href="#" class="product-item">
                                         <div class="product-item__img"
                                             style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-llkg456i0r0o3a)">
@@ -501,7 +527,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a href="#" class="product-item">
                                         <div class="product-item__img"
                                             style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-llkff6ham2eua6)">
@@ -533,7 +559,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a href="#" class="product-item">
                                         <div class="product-item__img"
                                             style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-llkg456i0r0o3a)">
@@ -566,7 +592,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a href="#" class="product-item">
                                         <div class="product-item__img"
                                             style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-llkff6ham2eua6)">
@@ -598,7 +624,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a href="#" class="product-item">
                                         <div class="product-item__img"
                                             style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-llkg456i0r0o3a)">
@@ -631,7 +657,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a href="#" class="product-item">
                                         <div class="product-item__img"
                                             style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-llkff6ham2eua6)">
@@ -663,7 +689,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a href="#" class="product-item">
                                         <div class="product-item__img"
                                             style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-llkg456i0r0o3a)">
@@ -696,7 +722,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a href="#" class="product-item">
                                         <div class="product-item__img"
                                             style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-llkff6ham2eua6)">
@@ -728,7 +754,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a href="#" class="product-item">
                                         <div class="product-item__img"
                                             style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-llkg456i0r0o3a)">
@@ -761,7 +787,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a href="#" class="product-item">
                                         <div class="product-item__img"
                                             style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-llkff6ham2eua6)">
@@ -793,7 +819,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a href="#" class="product-item">
                                         <div class="product-item__img"
                                             style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-llkg456i0r0o3a)">
@@ -826,7 +852,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a href="#" class="product-item">
                                         <div class="product-item__img"
                                             style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-llkff6ham2eua6)">
@@ -858,7 +884,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a href="#" class="product-item">
                                         <div class="product-item__img"
                                             style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-llkg456i0r0o3a)">
@@ -891,7 +917,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a href="#" class="product-item">
                                         <div class="product-item__img"
                                             style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-llkff6ham2eua6)">
@@ -923,7 +949,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a href="#" class="product-item">
                                         <div class="product-item__img"
                                             style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-llkg456i0r0o3a)">
@@ -956,7 +982,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a href="#" class="product-item">
                                         <div class="product-item__img"
                                             style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-llkff6ham2eua6)">
@@ -988,7 +1014,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a href="#" class="product-item">
                                         <div class="product-item__img"
                                             style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-llkg456i0r0o3a)">
@@ -1021,7 +1047,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a href="#" class="product-item">
                                         <div class="product-item__img"
                                             style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-llkff6ham2eua6)">
@@ -1053,7 +1079,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a href="#" class="product-item">
                                         <div class="product-item__img"
                                             style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-llkg456i0r0o3a)">
@@ -1086,7 +1112,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a href="#" class="product-item">
                                         <div class="product-item__img"
                                             style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-llkff6ham2eua6)">
@@ -1159,8 +1185,8 @@
 
         <footer class="footer">
             <div class="grid wide">
-                <div class="footer-support grid__row">
-                    <div class="grid__column-2-4">
+                <div class="footer-support row">
+                    <div class="col l-2 m-4 c-6">
                         <h3 class="footer-heading">CHĂM SÓC KHÁCH HÀNG</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
@@ -1198,7 +1224,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2 m-4 c-6">
                         <h3 class="footer-heading">VỀ SHOPEE</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
@@ -1230,7 +1256,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2 m-4 c-6">
                         <h3 class="footer-heading">THANH TOÁN</h3>
                         <img src="https://down-vn.img.susercontent.com/file/d4bbea4570b93bfd5fc652ca82a262a8" alt=""
                             class="footer-pay-img">
@@ -1248,6 +1274,8 @@
                             class="footer-pay-img">
                         <img src="https://down-vn.img.susercontent.com/file/0217f1d345587aa0a300e69e2195c492" alt=""
                             class="footer-pay-img">
+                    </div>
+                    <div class="col l-2 m-4 c-6">
                         <h3 class="footer-heading">ĐƠN VỊ VẬN CHUYỂN</h3>
                         <img src="https://down-vn.img.susercontent.com/file/vn-50009109-159200e3e365de418aae52b840f24185"
                             alt="" class="footer-ship-img">
@@ -1272,7 +1300,7 @@
                         <img src="https://down-vn.img.susercontent.com/file/vn-50009109-ec3ae587db6309b791b78eb8af6793fd"
                             alt="" class="footer-ship-img">
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2 m-4 c-6">
                         <h3 class="footer-heading">THEO DÕI CHÚNG TÔI TRÊN</h3>
                         <ul class="footer-social-list">
                             <li class="footer-social-item">
@@ -1295,7 +1323,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2 m-4 c-6">
                         <h3 class="footer-heading">TẢI ỨNG DỤNG SHOPEE NGAY THÔI</h3>
                         <div class="footer-download">
                             <a href="" class="footer-qr">
@@ -1319,22 +1347,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="footer-copyright grid__row">
-                    <div class="footer-copyright__title">© 2023 Shopee. Tất cả các quyền được bảo lưu.</div>
-                    <div class="footer-copyright__nations">
-                        <span class="footer-copyright__title">Quốc gia & Khu vực:</span>
-                        <a href="" class="footer-copyright__nation-link">Singapore</a>
-                        <a href="" class="footer-copyright__nation-link">Indonesia</a>
-                        <a href="" class="footer-copyright__nation-link">Đài Loan</a>
-                        <a href="" class="footer-copyright__nation-link">Thái Lan</a>
-                        <a href="" class="footer-copyright__nation-link">Malaysia</a>
-                        <a href="" class="footer-copyright__nation-link">Việt Nam</a>
-                        <a href="" class="footer-copyright__nation-link">Philippines</a>
-                        <a href="" class="footer-copyright__nation-link">Brazil</a>
-                        <a href="" class="footer-copyright__nation-link">México</a>
-                        <a href="" class="footer-copyright__nation-link">Colombia</a>
-                        <a href="" class="footer-copyright__nation-link">Chile</a>
-                    </div>
+                <div class="footer-copyright">
+                    <h3 class="footer-copyright__title">Đình Quân © 2023 Shopee. Tất cả các quyền được bảo lưu.</h3>
                 </div>
             </div>
         </footer>
